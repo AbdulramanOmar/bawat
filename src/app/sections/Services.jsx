@@ -13,25 +13,25 @@ const ServicesData = [
     name: "Fuel Sourcing & Transport",
     description:
       "We source and transport fuel to your location, ensuring timely delivery and quality service.",
-    img: "/ser (3).png",
+    img: "/ser (3).webp",
   },
   {
     name: "Construction & Site Logistics",
     description:
       "We manage all aspects of construction logistics, ensuring efficient site operations.",
-    img: "/ser (4).png",
+    img: "/ser (4).webp",
   },
   {
     name: "Oil & Gas Supply Chain",
     description:
       "We provide comprehensive supply chain solutions for the oil and gas industry, from procurement to delivery.",
-    img: "/ser (2).png",
+    img: "/ser (2).webp",
   },
   {
     name: "Business Consulting in Iraq",
     description:
       "We offer expert consulting services to help businesses navigate the Iraqi market and achieve success.",
-    img: "/ser (1).png",
+    img: "/ser (1).webp",
   },
 ];
 
