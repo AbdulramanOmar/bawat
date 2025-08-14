@@ -26,7 +26,7 @@ const projectContent = [
     title: "Client Case Studies ",
     description:
       "For Olive Group, an international safety and security training provider, we have delivered consultation and logistics facilitation for fuel sourcing and operational mobility in southern Iraq. This includes helping establish dependable fuel access points and supporting their training center’s logistical readiness with compliant, locally sourced fuel.",
-    image: "/project (9).jpg",
+    image: "/project (4).jpg",
   },
   {
     id: "04",
@@ -175,3 +175,4 @@ export default function ProjectsSection() {
     </div>
   );
 }
+
