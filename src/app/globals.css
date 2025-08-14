@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+/* القاعدة العامة */
+.containe {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: auto;
+  padding-right: auto;
+  max-width: 100%;
+}
+
+/* الشاشات المتوسطة - md */
+@media (min-width: 768px) {
+  .containe {
+    max-width: 728px;
+  }
+}
+
+/* الشاشات الكبيرة - lg */
+@media (min-width: 1024px) {
+  .containe {
+    max-width: 1024px;
+  }
+}
+
+/* الشاشات الأكبر - xl */
+@media (min-width: 1280px) {
+  .containe {
+    max-width: 1220px; /* حسب طلبك، عندما تكون الشاشة 1440px يكون العرض 1220px */
+  }
+}
+
+/* اختيارية: شاشات ضخمة - 2xl */
+@media (min-width: 1536px) {
+  .containe {
+    max-width: 1220px; /* تظل كما هي */
+  }
+}
+
+
+.strok-text {
+  -webkit-text-stroke: 0.5px #000;
+  color: transparent;
+}
+
