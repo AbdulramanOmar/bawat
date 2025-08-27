@@ -124,21 +124,6 @@ const OurLocation = () => {
               <h3 className="text-[#ddd] font-medium">Head Office</h3>
               <p className="text-[#d3d3d3da]">Basra</p>
             </motion.span>
-
-            <motion.div
-              initial={{ height: 0 }}
-              whileInView={{ height: 300 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1, delay: 2.7, ease: "easeOut" }}
-              className="absolute origin-top right-[28px] sm:right-[150px] sm:top-[388px] z-10 w-[400px] overflow-hidden"
-            >
-              <img
-                src="/test1.jpeg"
-                alt=""
-                className="w-full h-full object-cover hidden md:block"
-              />
-            </motion.div>
-
             <motion.span
               whileInView={{ width: "350px" }}
               initial={{ width: 0 }}
