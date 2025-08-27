@@ -53,7 +53,7 @@ const Hero = () => {
         data-depth="0.4"
       >
         <Image
-          src="/hero-back.png"
+          src="/hero-back.webp"
           alt="Hero Background"
           fill
           className="object-cover"
@@ -97,3 +97,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
