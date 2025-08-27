@@ -13,14 +13,14 @@ const people = [
     job: "CEO",
     message:
       "The Company’s highly qualified executive staff with extensive experience in the industry provide “turnkey” project development services to vertically integrated oil and gas companies. Provision of logistics services is also among ",
-    img: "/test1.jpeg",
+    img: "/lead (1).jpg",
   },
   {
-    name: "Nikolay Grishankov",
+    name: "Mohammed Sabah",
     job: "Project Manager",
     message:
       "With deep expertise in oilfield operations, Anna leads multiple large-scale initiatives and ensures project efficiency, safety, and customer satisfaction across all fields.multiple large-scale initiatives and ensures project efficiency, safety,",
-    img: "/test1.jpeg",
+    img: "/lead (2).jpg",
   },
 ];
 
@@ -53,15 +53,17 @@ const TestimonialHero = () => {
   };
 
   const current = people[index];
+  const prevIndex = (index - 1 + people.length) % people.length;
+  const prevImg = people[prevIndex].img;
 
   return (
     <section className="flex flex-col md:flex-row w-full min-h-screen text-white overflow-hidden">
       {/* Left Side */}
       <div className="md:w-1/2 w-full bg-[#1b1f23] flex flex-col justify-center items-center px-6 py-10 sm:px-10 relative">
         <AnimatePresence mode="wait">
-          <div className="relative w-full h-[300px] md:h-full overflow-hidden rounded-md">
+          <div className="relative w-full h-[300px] md:h-full overflow-hidden rounded-lg">
             <Image
-              src={current.img}
+              src={prevImg}
               alt={current.name}
               fill
               className="object-cover rounded-md"
