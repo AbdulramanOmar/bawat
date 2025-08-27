@@ -44,10 +44,10 @@ const Footer = () => {
                 alt="Bawabt Albargsiyah-Logo"
               />
             </div>
-            <p className="my-3 text-base font-bold text-white">
+               <p className="my-3 text-base font-bold text-white">
               BAWABA AL-BARGSIYAH for general services and general
               transportation
-              <br className="mt-5" />
+              <hr className="my-3 text-[#7777]" />
               Achieving hard work in hard places
             </p>
             <div className="flex gap-3">
@@ -167,3 +167,4 @@ const SocialIcon = ({ icon, link }) => (
 );
 
 export default Footer;
+
