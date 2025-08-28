@@ -17,7 +17,7 @@ const people = [
   },
   {
     name: "Mohammed Sabah",
-    job: "Project Manager",
+    job: "COO",
     message:
       "With deep expertise in oilfield operations, Anna leads multiple large-scale initiatives and ensures project efficiency, safety, and customer satisfaction across all fields.multiple large-scale initiatives and ensures project efficiency, safety,",
     img: "/lead (2).jpg",
@@ -83,6 +83,14 @@ const TestimonialHero = () => {
                 className="object-cover rounded-md"
               />
             </motion.div>
+            <motion.span
+              initial={{ y: "10px" }}
+              animate={{ y: 0 }}
+              className="absolute left-5 bottom-5 z-50"
+            >
+              {" "}
+              {current.job}{" "}
+            </motion.span>
           </div>
         </AnimatePresence>
 
