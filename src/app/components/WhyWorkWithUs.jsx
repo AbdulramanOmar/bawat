@@ -66,11 +66,6 @@ export default function WhyWorkWithUs() {
                 <div className="flex items-center gap-2">
                   {item.icon}
                 </div>
-                {isActive && (
-                  <button className="mt-6 px-4 py-2 border border-black rounded-full font-medium hover:bg-black hover:text-white transition">
-                    Read More
-                  </button>
-                )}
               </motion.div>
             );
           })}
@@ -79,3 +74,4 @@ export default function WhyWorkWithUs() {
     </section>
   );
 }
+
