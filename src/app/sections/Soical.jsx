@@ -5,32 +5,18 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const people = [
   {
-    name: "Nikolay Grishankov",
+    name: "Ali Hassan Fleet driver",
     job: "CEO",
     message:
       "Safety first. Protection of life and health of Naftagaz personnel and contractors, integrity of assets, reliability of equipment and environmental protection are critical to our Company's sustainable development. The target of Naftagaz occupational safety policy is zero injuries and accidents. To achieve this goal, Naftagaz utilizes all the experience gained both through its own operations and study of the industry best practices.",
-    img: "/test1.jpeg",
+    img: "/about.webp",
   },
   {
-    name: "Anna Petrova",
+    name: "Ali Hassan Fleet driver",
     job: "Project Manager",
     message:
-      "With deep expertise in oilfield operations, Anna leads multiple large-scale initiatives and ensures project efficiency, safety, and customer satisfaction across all fields.",
-    img: "/test1.jpeg",
-  },
-  {
-    name: "Nikolay Grishankov",
-    job: "CEO",
-    message:
-      "Safety first. Protection of life and health of Naftagaz personnel and contractors, integrity of assets, reliability of equipment and environmental protection are critical to our Company's sustainable development.",
-    img: "/test1.jpeg",
-  },
-  {
-    name: "Anna Petrova",
-    job: "Project Manager",
-    message:
-      "With deep expertise in oilfield operations, Anna leads multiple large-scale initiatives and ensures project efficiency, safety, and customer satisfaction across all fields.",
-    img: "/test1.jpeg",
+      "With deep expertise in oilfield operations, Ali hassan Fleet driver leads multiple large-scale initiatives and ensures project efficiency, safety, and customer satisfaction across all fields.",
+    img: "/about.webp",
   },
 ];
 
@@ -94,6 +80,7 @@ const Soical = () => {
                 className="object-cover rounded-md"
               />
             </motion.div>
+            <span> {} </span>
           </div>
         </AnimatePresence>
 
@@ -115,7 +102,7 @@ const Soical = () => {
                   {char === " " ? "\u00A0" : char}
                 </motion.span>
               ))}
-            <br />
+              <span> </span>
             {current.name
               .split(" ")[1]
               .split("")
@@ -123,7 +110,17 @@ const Soical = () => {
                 <motion.span variants={child} key={i} className="inline-block">
                   {char === " " ? "\u00A0" : char}
                 </motion.span>
-              ))}
+              ))}{" "}
+            <br />
+            {current.name
+              .split(" ")[2]
+              .split("")
+              .map((char, i) => (
+                <motion.span variants={child} key={i} className="inline-block">
+                  {char === " " ? "\u00A0" : char}
+                </motion.span>
+              ))}{" "}
+          
           </motion.h2>
         </AnimatePresence>
       </div>
@@ -165,7 +162,7 @@ const Soical = () => {
             }
           >
             <IoIosArrowForward className="text-base sm:text-lg rotate-180" />
-          </div>       
+          </div>
           <div
             className="w-8 h-8 sm:w-10 sm:h-10 bg-white text-[#9e0d22] rounded-full flex items-center justify-center cursor-pointer hover:scale-105 transition"
             onClick={() => setIndex((prev) => (prev + 1) % people.length)}
@@ -179,3 +176,4 @@ const Soical = () => {
 };
 
 export default Soical;
+
