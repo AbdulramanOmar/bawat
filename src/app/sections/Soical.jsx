@@ -1,22 +1,24 @@
+"use client";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import Title from "../components/Title";
 
 const people = [
   {
     name: "Ali Hassan Fleet driver",
     job: "CEO",
     message:
-      "Safety first. Protection of life and health of Naftagaz personnel and contractors, integrity of assets, reliability of equipment and environmental protection are critical to our Company's sustainable development. The target of Naftagaz occupational safety policy is zero injuries and accidents. To achieve this goal, Naftagaz utilizes all the experience gained both through its own operations and study of the industry best practices.",
+      "Daily inspection and preventive maintenance routines, Emergency fuel spill and fire containment protocols",
     img: "/about.webp",
   },
   {
     name: "Ali Hassan Fleet driver",
     job: "Project Manager",
     message:
-      "With deep expertise in oilfield operations, Ali hassan Fleet driver leads multiple large-scale initiatives and ensures project efficiency, safety, and customer satisfaction across all fields.",
-    img: "/about.webp",
+      "Safety equipment compliance for all drivers and vehicles, Digital documentation and secure reporting practices",
+    img: "/about2.webp",
   },
 ];
 
@@ -52,7 +54,8 @@ const Soical = () => {
   };
 
   const current = people[index];
-
+  const prevIndex = (index - 1 + people.length) % people.length;
+  const prevImg = people[prevIndex].img;
   return (
     <section className="flex flex-col md:flex-row-reverse w-full min-h-screen text-white overflow-hidden">
       {/* Left Side */}
@@ -60,7 +63,7 @@ const Soical = () => {
         <AnimatePresence mode="wait">
           <div className="relative w-full h-[300px] md:h-full overflow-hidden rounded-md">
             <Image
-              src={current.img}
+              src={prevImg}
               alt={current.name}
               fill
               className="object-cover rounded-md"
@@ -102,7 +105,7 @@ const Soical = () => {
                   {char === " " ? "\u00A0" : char}
                 </motion.span>
               ))}
-              <span> </span>
+            <span> </span>
             {current.name
               .split(" ")[1]
               .split("")
@@ -120,13 +123,13 @@ const Soical = () => {
                   {char === " " ? "\u00A0" : char}
                 </motion.span>
               ))}{" "}
-          
           </motion.h2>
         </AnimatePresence>
       </div>
 
       {/* Right Side */}
       <div className="md:w-1/2 w-full bg-[#9e0d22] flex flex-col justify-center px-6 py-10 sm:px-10 relative">
+        <Title title={"Risk Management"} color="white" />
         <AnimatePresence mode="wait">
           <motion.div
             key={index + "-message"}
@@ -141,17 +144,6 @@ const Soical = () => {
             </p>
           </motion.div>
         </AnimatePresence>
-
-        <motion.a
-          href="#"
-          className="mt-6 inline-block text-sm font-semibold underline"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        >
-          Learn more
-        </motion.a>
-
         {/* Navigation */}
         <div className="absolute bottom-4 right-4 sm:bottom-10 sm:right-10 flex items-center gap-2 sm:gap-3">
           {/* Previous */}
@@ -176,4 +168,3 @@ const Soical = () => {
 };
 
 export default Soical;
-
