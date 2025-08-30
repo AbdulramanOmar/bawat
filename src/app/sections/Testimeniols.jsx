@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const people = [
   {
-    name: "Nikolay Grishankov",
+    name: "Nour Aldeen  ",
     job: "CEO",
     message:
       "The Company’s highly qualified executive staff with extensive experience in the industry provide “turnkey” project development services to vertically integrated oil and gas companies. Provision of logistics services is also among ",
@@ -174,3 +174,4 @@ const TestimonialHero = () => {
 };
 
 export default TestimonialHero;
+
