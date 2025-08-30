@@ -9,16 +9,15 @@ const people = [
     name: "Mission Statement",
     message:
       "To deliver safe, tailored transportation and support services across challenging environments, helping our partners succeed through operational excellence, integrity, and commitment.",
-    img: "/about.webp",
+    img: "/Lead (1).jpg",
   },
   {
     name: "Vision ",
     message:
       "To be the preferred partner for transportation and general services in Iraq and the region, recognized for our efficiency, safety, and strong local knowledge.",
-    img: "/about2.webp",
+    img: "/Lead (2).jpg",
   },
 ];
-
 const Mission = () => {
   const [index, setIndex] = useState(0);
   const [prev, setPrev] = useState(people[0]); // 👈 نخزن الصورة السابقة
@@ -119,17 +118,6 @@ const Mission = () => {
               ))}
           </motion.h2>
         </AnimatePresence>
-        {/* CTA Button */}
-        <motion.a
-          href="#"
-          className="mt-6 inline-block text-sm font-semibold underline"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        >
-          Learn more
-        </motion.a>
-
         {/* Navigation */}
         <div className="absolute bottom-4 right-4 sm:bottom-10 sm:right-10 flex items-center gap-2 sm:gap-3">
           {/* Previous */}
@@ -161,3 +149,4 @@ const Mission = () => {
 };
 
 export default Mission;
+
