@@ -85,7 +85,7 @@ export default function HorizontalScrollSection() {
               />
 
               {/* ✅ الزجاج + المحتوى */}
-              <div className="relative z-10 h-full w-full flex items-end pb-15 justify-center px-10">
+              <div className="relative z-10 h-full w-full flex items-end pb-30 lg:pb-15 justify-center px-10">
                 <div className="w-full max-w-5xl mx-auto flex justify-between items-end sm:items-center backdrop-blur-md bg-white/10 border border-white/20 rounded-3xl p-8 sm:p-12 shadow-2xl">
                   {/* ✅ النصوص */}
                   <div className="max-w-2xl">
@@ -115,3 +115,4 @@ export default function HorizontalScrollSection() {
     </section>
   );
 }
+
