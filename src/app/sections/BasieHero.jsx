@@ -8,7 +8,7 @@ const BasieHero = ({ title }) => {
         <div className="containe">
           <AnimatedText
             text={title}
-            className="lg:text-[160px] font-bold relative tracking-tight z-30 -mb-13 text-5xl text-white"
+            className="lg:text-[160px] font-bold relative tracking-tight z-30 -mb-7  lg:-mb-13 text-5xl text-white"
             delay={0}
             speed={0.05}
           />
@@ -28,3 +28,4 @@ const BasieHero = ({ title }) => {
 };
 
 export default BasieHero;
+
