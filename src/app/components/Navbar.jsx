@@ -59,9 +59,9 @@ export default function Navbar() {
           </div>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-2xl text-white"
+            className="md:hidden text-2xl mr-3 text-white"
           >
-            {isOpen ? <HiOutlineX size={30} /> : <HiOutlineMenu size={30} />}
+            {isOpen ? <HiOutlineX size={34} /> : <HiOutlineMenu size={34} />}
           </button>
         </div>
 
@@ -89,7 +89,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
-              className="w-full flex flex-col gap-4 mt-4 md:hidden"
+              className="w-[90%] py-1 flex backdrop-blur-md bg-white/10 border border-white/20 rounded-lg mx-5 shadow-2xl flex-col gap-4 mt-4 md:hidden"
             >
               {navLinks.map((link, i) => (
                 <motion.div
