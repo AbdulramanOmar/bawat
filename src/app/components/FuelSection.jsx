@@ -73,7 +73,7 @@ const FuelSection = () => {
       <div className="relative w-full md:w-1/2 space-y-6 z-10">
         <h2
           ref={(el) => (textRefs.current[0] = el)}
-          className="text-4xl md:text-6xl font-extrabold tracking-wide"
+          className="text-4xl md:text-6xl font-extrabold"
           style={{ color: "#9e0d22" }}
         >
           Petroleum Product Transportation
@@ -124,3 +124,4 @@ const FuelSection = () => {
 };
 
 export default FuelSection;
+
