@@ -81,11 +81,12 @@ export default function ProcessFlow() {
   return (
     <section className="relative bg-[#0a0a0a] text-white py-40 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className=" mb-40">
-          <Title title="    How to Work With Us" color="white" />
+        <h2 className="mb-40">
+          <Title title="How to Work With Us" color="white" />
         </h2>
 
-        <div className="relative h-[350px]">
+        {/* Large screens (Horizontal flow) */}
+        <div className="hidden md:block relative h-[350px]">
           {/* Wavy SVG Line */}
           <svg
             viewBox="0 0 1000 100"
@@ -101,7 +102,7 @@ export default function ProcessFlow() {
             />
           </svg>
 
-          {/* Steps */}
+          {/* Steps horizontally */}
           <div className="absolute top-0 left-0 w-full h-full flex justify-between items-center px-4">
             {steps.map((step, index) => {
               const isAbove = index % 2 === 0;
@@ -135,6 +136,42 @@ export default function ProcessFlow() {
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* Small screens (Vertical flow) */}
+        <div className="block md:hidden relative">
+          {/* Vertical line */}
+          <div className="absolute left-8 top-0 h-full w-[4px] bg-[#9e0d22]"></div>
+
+          <div className="flex flex-col space-y-20 relative pl-20">
+            {steps.map((step, index) => (
+              <div
+                key={index}
+                ref={(el) => (stepRefs.current[index] = el)}
+                className="relative"
+              >
+                {/* Big Number */}
+                <div className="absolute -left-16 text-[80px] font-extrabold text-[#ffffff14] -top-6 select-none pointer-events-none leading-none">
+                  {index + 1}
+                </div>
+
+                {/* Icon */}
+                <div className="w-16 h-16 absolute -left-8 top-2 rounded-full bg-[#0f0f0f] border-4 border-[#9e0d22] flex items-center justify-center text-[#9e0d22] shadow-xl z-10">
+                  {step.icon}
+                </div>
+
+                {/* Content */}
+                <div className="bg-[#111] rounded-xl p-6 shadow-lg">
+                  <h3 className="text-lg font-semibold text-[#9e0d22] mb-2">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
