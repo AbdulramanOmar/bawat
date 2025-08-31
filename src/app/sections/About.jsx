@@ -89,7 +89,7 @@ const About = () => {
         </div>
         <div className="relative z-10 w-full h-screen flex items-center justify-between px-8">
           <div ref={textRef} className="max-w-xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 ">
+            <h2 className="text-xl md:text-4xl font-bold mb-4 ">
               Integrity, Responsibility, Diversity, Loyalty, Accountability,
               Availability
             </h2>
@@ -105,3 +105,4 @@ const About = () => {
 };
 
 export default About;
+
