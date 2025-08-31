@@ -148,7 +148,7 @@ export default function ProjectsSection() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative hidden md:block">
       {projectContent.map((project, index) => {
         const isEven = index % 2 === 0;
 
@@ -213,4 +213,5 @@ export default function ProjectsSection() {
       })}
     </div>
   );
+
 }
