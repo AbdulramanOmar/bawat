@@ -48,7 +48,7 @@ const OurLocation = () => {
           <h5 className="font-bold text-white">fuel transport</h5>
         </div>
         <div>
-          <p className="text-2xl font-bold leading-7">
+          <p className="lg:text-2xl text-lg font-bold leading-7">
             Founded in Basra, Iraq, Bawabt Albargsiyah for General Services and
             Limited Transportation has established itself as a reliable partner
             in the transport of petroleum products across Iraq. With a
