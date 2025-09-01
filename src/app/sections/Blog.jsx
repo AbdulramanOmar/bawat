@@ -110,8 +110,8 @@ const Blog = () => {
   return (
     <section className="py-20">
       <Title title={"blog"} color="white" />
-      <div className="flex containe items-center justify-between">
-        <div className="flex items-center gap-5">
+      <div className="flex containe md:flex-row flex-col lg:items-center justify-between lg:gap-0 gap-5">
+        <div className="flex items-center  gap-5">
           <span className="px-4 py-2 text-black rounded-full bg-[#ddd]">
             News
           </span>
