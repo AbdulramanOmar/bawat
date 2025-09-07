@@ -47,7 +47,7 @@ const ElegantNumber = ({ num = 85, color = "#9e0d22" }) => {
   return (
     <div
       ref={ref}
-      className={`flex text-8xl font-semibold gap-[0.05em] text-[${color}]`}
+      className={`flex text-3xl lg:text-8xl font-semibold gap-[0.05em] text-[${color}]`}
     >
       {/* الرقم الأول ثابت */}
       <div className="w-[1ch] h-[90px] overflow-hidden text-center">
@@ -70,3 +70,4 @@ const ElegantNumber = ({ num = 85, color = "#9e0d22" }) => {
 };
 
 export default ElegantNumber;
+
