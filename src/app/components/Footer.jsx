@@ -24,7 +24,6 @@ const navLinks = [
     ],
   },
   { name: "Projects", href: "/projects" },
-  { name: "Leadership ", href: "/leadership " },
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -167,4 +166,5 @@ const SocialIcon = ({ icon, link }) => (
 );
 
 export default Footer;
+
 
