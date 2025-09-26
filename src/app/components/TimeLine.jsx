@@ -9,35 +9,28 @@ const timelineData = [
     year: "2015",
     events: [
       { date: "January", text: "Company founded and first office opened" },
-      { date: "June", text: "Secured first round of funding" },
+      { date: "June", text: "Second first contact" },
     ],
   },
   {
     year: "2016",
     events: [
-      { date: "March", text: "Launched first official product" },
-      { date: "December", text: "Reached 10k active users" },
+      { date: "March", text: "First 1000 trip" },
+      { date: "December", text: "Reached 10 clients" },
     ],
   },
   {
     year: "2018",
     events: [
-      { date: "April", text: "Expanded internationally" },
-      { date: "August", text: "Opened new headquarters" },
+      { date: "April", text: "Expand in all basra oilfields " },
+      { date: "August", text: "Oped Dubai office" },
     ],
   },
   {
     year: "2020",
     events: [
-      { date: "January", text: "Hit 1M users milestone" },
+      { date: "January", text: "Non stop operations in covid" },
       { date: "October", text: "Launched mobile application" },
-    ],
-  },
-  {
-    year: "2022",
-    events: [
-      { date: "March", text: "Entered new markets in Europe" },
-      { date: "September", text: "Partnership with global brands" },
     ],
   },
 ];
@@ -144,6 +137,7 @@ export default function Timeline() {
           </div>
         </div>
       </div>
+      <span className="text-center block mt-10 text-2xl">We keep going to service the best</span>
     </section>
   );
 }
