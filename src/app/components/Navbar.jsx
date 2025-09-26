@@ -24,7 +24,6 @@ const navLinks = [
     ],
   },
   { name: "Projects", href: "/projects" },
-  { name: "Leadership ", href: "/leadership " },
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -116,3 +115,4 @@ export default function Navbar() {
     </header>
   );
 }
+
