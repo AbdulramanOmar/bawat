@@ -26,13 +26,6 @@ const timelineData = [
       { date: "August", text: "Oped Dubai office" },
     ],
   },
-  {
-    year: "2020",
-    events: [
-      { date: "January", text: "Non stop operations in covid" },
-      { date: "October", text: "Launched mobile application" },
-    ],
-  },
 ];
 
 // أنيميشن العناصر
@@ -141,3 +134,4 @@ export default function Timeline() {
     </section>
   );
 }
+
